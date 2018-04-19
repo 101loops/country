@@ -16,8 +16,8 @@ type Country struct {
 	TLD           string
 }
 
-func (c *Country) String() {
-	fmt.Sprintf("%s[%s]", c.Name, c.ISO)
+func (c *Country) String() string {
+	return fmt.Sprintf("%s[%s]", c.Name, c.ISO)
 }
 
 // Continent returns the country's Continent.
